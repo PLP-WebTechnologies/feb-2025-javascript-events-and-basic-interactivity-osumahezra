@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"> <!--Character set for the document-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Responsive design-->
+    <title>Coding Nepal</title> <!--Title of the document-->
+    <link rel="stylesheet" href="style.css"> <!--Link to external CSS file-->
+    <script src="script.js" defer></script> <!--Link to external JavaScript file with defer attribute-->
+</head>
+<body>
+    <header class="header-container">
+        <div class="logo">
+            <img src="images/log.png" width= 100 alt="Logo" class="logo-image">
+        </div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Courses</a>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+        </nav>
+        <div>
+            <button class="navb" id = "login">Log In</button>
+            <button class="navb" id = "signin">Sign In</button>
+        </div>
+    </header>
+    <main>
+        <div class = "maindiv">
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="images/gallery1.jpg" style="width: 100%;">
+                    <div class="caption">Website Optimization</div>
+                </div>
+
+                <div class="slide fade">
+                    <img src="images/gallery2.jpg" style="width: 100%;">
+                    <div class="caption">Front End Design</div>
+                </div>
+
+                <div class="slide fade">
+                    <img src="images/gallery3.jpg" style="width: 100%;">
+                    <div class="caption">Data Science and Analytics</div>
+                </div>
+                <div class="slide fade">
+                    <img src="images/gallery4.jpg" style="width: 100%;">
+                    <div class="caption">DashBoard for Monitoring</div>
+                </div>
+                <!-- Arrows -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+            </div>
+            <div class = "main-container">
+                <div id = "welcome">
+                    <h1>WELCOME BACK!</h1>
+                    <p>Please log in using your personal information to stay connected with us</p>
+                </div>
+                <div>
+                    <div id="fill">
+                        <h1>LOGIN</h1>
+                        <form id ="details" action="">
+                            <input class = "but" type="email" id="email" name="emaill" required placeholder="E-mail"> <br>
+                            <input class = "but" type="password" id="password" name="password" required placeholder="password"><br>
+                            <p id="error-msg" style="color: red;"></p>
+                            <a href="#" id="forgot-password">Forgot Password?</a>
+                            <button class = "but" id = "sub">LOGIN</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
